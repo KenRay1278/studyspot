@@ -1,0 +1,41 @@
+place_id,place_name,area,place_type,maps_url,noise_level,crowd_level,table_capacity,wifi_quality,power_outlet_availability,average_price,distance_to_binus_km,open_time,close_time,open_on_sundays
+1,LKC Discussion Room,BINUS Alam Sutera,Campus Space,https://maps.app.goo.gl/CRkRgCxV6U5izVxt5,1,1,8,3,5,0,0,09:00,17:00,0
+2,Monday Coffee Alam Sutera,Alam Sutera,Cafe,https://maps.app.goo.gl/qMwRkAbsosHvLtnS7,2,2,4,5,4,40000,0.5,07:30,22:00,1
+3,McDonald's Downtown Alam Sutera,Alam Sutera,Restaurant / Fast Food,https://maps.app.goo.gl/AgJAKPBdUYqTKXSR6,4,3,4,4,3,60000,1.3,00:00,23:59,1
+4,Coworking Space Worktren Alam Sutera,Alam Sutera,Coworking Space,https://maps.app.goo.gl/CDRU99tuhjzqXwQC6,3,3,6,5,5,75000,1,09:00,18:00,0
+5,Start Space Gading Serpong,Gading Serpong,Coworking Space,https://maps.app.goo.gl/4EzSC789TQKciLuL6,3,3,6,4,5,55000,5.9,08:00,20:00,1
+6,Lumino Cafe - Foresta BSD Tangerang,BSD,Cafe,https://maps.app.goo.gl/ruiUL5q6Yh5oS4eQ7,3,3,4,4,4,60000,10.6,09:00,22:00,1
+7,Kopi Kenangan - Alam Sutera (DT),Alam Sutera,Cafe,https://maps.app.goo.gl/GLsrt7KQieJPFLt48,4,4,4,5,5,30000,1.7,00:00,23:59,1
+8,Kopi Nako BSD,BSD,Cafe,https://maps.app.goo.gl/Ao1G8nGwgsjMbugz5,4,5,4,5,5,60000,14,00:00,23:59,1
+9,Titik Koma Gading Serpong,Gading Serpong,Cafe,https://maps.app.goo.gl/umiqKuHvaaQYLDxs9,2,4,4,5,5,45000,7.6,07:00,21:00,1
+10,IKEA Restaurant Alam Sutera,Alam Sutera,Restaurant / Fast Food,https://maps.app.goo.gl/F5zXK9v3wiAnuPmaA,4,3,4,4,4,75000,1.6,10:00,21:30,1
+11,Bignose Coffee Shop,Banjar Wijaya,Cafe,https://maps.app.goo.gl/UDDoJpWZt1uEMdrv5,3,2,4,5,5,45000,3.4,08:30,23:30,1
+12,Pasar 8 Area Alam Sutera,Alam Sutera,Outdoor,https://maps.app.goo.gl/iqbETYeB3jXbb1s86,5,5,4,1,1,65000,4,07:00,23:59,1
+13,Valioso x Picco Gelato,Karawaci,Cafe,https://maps.app.goo.gl/PjcSkT9KHRU7ozjcA,2,2,4,5,5,70000,12,07:00,22:00,1
+14,Kebon Kita Space | Coffee & Eatery Serpong Tangerang,Gading Serpong,Outdoor,https://maps.app.goo.gl/4FWShmZDoS92niv5A,3,2,6,3,4,70000,9,07:00,23:00,1
+15,Hoque's Kitchen,Modernland,Restaurant / Fast Food,https://maps.app.goo.gl/DyadQCBhmsAZiR27A,4,3,6,5,2,50000,4,11:00,23:30,1
+16,Kafe Pedekar Alam Sutera,Alam Sutera,Cafe,https://maps.app.goo.gl/3TGZE5QhWnuXfB3u6?g_st=ac,3,3,4,5,5,50000,4.4,10:00,03:00,1
+17,LKC General Area,BINUS Alam Sutera,Campus Space,https://maps.app.goo.gl/CRkRgCxV6U5izVxt5,4,4,4,3,5,0,0,09:00,17:00,0
+18,ARAH Coffee Alam Sutera,Alam Sutera,Cafe,https://maps.app.goo.gl/9BRJGort6KopGVKL9,2,2,4,5,5,50000,0.5,00:00,23:59,1
+19,Good Friends Bistro & Cafe Alam Sutera,Alam Sutera,Cafe,https://maps.app.goo.gl/VkhbcUwuLJcMgmyV7?g_st=ac,2,2,4,5,5,75000,0.3,08:00,22:00,1
+20,Starbucks DT Pacific Garden Alam Sutera,Alam Sutera,Cafe,https://maps.app.goo.gl/SU1XB2nxLQsGJuN6A,2,3,3,5,5,75000,0.3,07:00,22:00,1
+21,A-Ramen Pacific Garden,Alam Sutera,Restaurant / Fast Food,https://maps.app.goo.gl/rHkxa5gbkwYmEafZA,2,2,2,1,1,50000,0.3,10:00,22:00,1
+22,Yoshinoya Binus Alam Sutera,BINUS Alam Sutera,Restaurant / Fast Food,https://maps.app.goo.gl/kedUkijfm8WKciLh8,3,3,4,1,2,50000,0,08:00,17:45,0
+23,KFC Alam Sutera,Alam Sutera,Restaurant / Fast Food,https://maps.app.goo.gl/A8kX7B7r8Pa12jxU8,3,2,4,1,2,50000,2.5,08:00,23:00,1
+24,1/15 Coffee Alam Sutera,Alam Sutera,Cafe,https://maps.app.goo.gl/dkXVdXBFuCkT1VD7A?g_st=ac,3,4,4,5,3,75000,1.6,07:00,21:00,1
+25,"NOB Coffee & Eatery, The Grove Alam Sutera",Alam Sutera,Cafe,https://maps.app.goo.gl/XkEb1fC6r8Zyc1oC6?g_st=ac,3,3,4,3,3,75000,2.9,08:00,22:00,1
+26,FÜTOPIA - Mall Alam Sutera,Alam Sutera,Restaurant / Fast Food,https://maps.app.goo.gl/dpGhcckKFX2UCR8aA?g_st=ac,3,3,4,2,3,50000,0.7,10:00,22:00,1
+27,Solaria - Mall @ Alam Sutera,Alam Sutera,Restaurant / Fast Food,https://maps.app.goo.gl/xfuBB5EQpH4ruyHGA,3,3,4,1,2,60000,0.7,10:00,22:00,1
+28,Coarse & Fine,Alam Sutera,Cafe,https://maps.app.goo.gl/5vP2qeWb2C7o27uq5?g_st=ac,2,2,4,3,3,90000,2.6,08:00,18:00,1
+29,J.CO DONUTS & COFFEE - MALL ALAM SUTERA,Alam Sutera,Cafe,https://maps.app.goo.gl/LKtVokwDNp9tv5wy6,3,3,2,4,2,50000,0.7,10:00,22:00,1
+30,Mixue Mall @ Alam Sutera,Alam Sutera,Cafe,https://maps.app.goo.gl/ARBbM9LDWC7co3a37,3,3,4,1,2,20000,0.7,10:00,22:00,1
+31,BINUS Alam Sutera Canteen,BINUS Alam Sutera,Campus Space,https://maps.app.goo.gl/CRkRgCxV6U5izVxt5,5,5,6,3,1,20000,0,07:00,19:00,0
+32,Platon Coffee,Alam Sutera,Cafe,https://maps.app.goo.gl/njDJYns8n4GbQTn8A,3,3,4,5,5,60000,3.5,08:00,20:00,1
+33,Coffee Melantjong,Alam Sutera,Cafe,https://maps.app.goo.gl/9SPrHmeYzRc7ZbQY6?g_st=ac,3,3,4,3,1,60000,2.6,07:00,22:00,1
+34,Kopi Nako Alam Sutera,Alam Sutera,Cafe,https://maps.app.goo.gl/mzpNHiA97wjaHvmXA,4,4,6,3,3,50000,2.2,09:00,20:00,1
+35,Two Stories Resto & Lounge,Alam Sutera,Restaurant / Fast Food,https://maps.app.goo.gl/FTQGbdiW11xiM9qK9,3,3,4,3,4,150000,2.2,10:00,23:59,1
+36,Jakarta Coffee House Alam Sutera,Alam Sutera,Cafe,https://maps.app.goo.gl/fw5KDdZDCNCRgrcG8,2,2,4,4,4,75000,2.4,08:00,23:59,1
+37,Casabrew Coffee,Alam Sutera,Cafe,https://maps.app.goo.gl/nRLuZDg2huaw6M7H9,3,3,2,4,5,50000,2.8,09:00,19:00,1
+38,Niv Coffee,Alam Sutera,Cafe,https://maps.app.goo.gl/bp3ga88ZPfp3nD5M7?g_st=ac,2,2,4,4,3,40000,2.5,08:00,20:00,1
+39,Aruku Coffee and Studio Gading Serpong,Gading Serpong,Cafe,https://maps.app.goo.gl/cLfBUfsp3ShthTpdA?g_st=ac,3,3,4,4,4,65000,11,07:00,22:00,1
+40,Unspoken Coffee,Gading Serpong,Cafe,https://maps.app.goo.gl/nzLkX3jtb7t1KFmb7?g_st=ac,3,3,2,4,5,40000,10,09:00,20:00,1

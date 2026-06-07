@@ -1,0 +1,16 @@
+user_id,study_frequency,main_study_purpose,usual_group_size,noise_tolerance,crowd_tolerance,wifi_importance,outlet_importance,table_capacity_importance,distance_tolerance,preferred_study_time,study_on_sundays,usual_group_size_raw,avg_session_spending_raw,avg_session_spending_numeric,avg_session_spending_open_ended,distance_tolerance_raw,distance_tolerance_unlimited,study_on_sundays_numeric
+u1,4,Solo study,1,2,2,4,5,2,3.0,Afternoon,Sometimes,1,"50,000",50000.0,0,3,0,0.5
+u2,1,Solo study,1,1,1,5,5,1,1.0,No Preference,Yes,1,0,0.0,0,1,0,1.0
+u3,4,Group assignment / discussion,4,3,3,4,4,4,3.0,Afternoon,No,3-4,"75,000",75000.0,0,3,0,0.0
+u4,2,Exam preparation,4,3,4,5,3,4,20.0,Afternoon,Yes,3-4,"50,000",50000.0,0,Distance does not matter,1,1.0
+u5,5,Casual study,1,2,2,3,5,1,3.0,No Preference,No,1,"100,000",100000.0,0,3,0,0.0
+u6,3,Group assignment / discussion,4,4,4,5,3,5,3.0,No Preference,Sometimes,3-4,"25,000",25000.0,0,3,0,0.5
+u7,4,Coding / laptop work,2,1,2,5,5,5,7.0,No Preference,Yes,2,>100000,125000.0,1,7,0,1.0
+u8,5,Group assignment / discussion,6,3,3,3,3,4,3.0,Afternoon,Yes,5-6,"100,000",100000.0,0,3,0,1.0
+u9,2,Solo study,1,1,1,3,4,5,1.0,Morning,Yes,1,0,0.0,0,1,0,1.0
+u10,5,Coding / laptop work,1,1,1,5,5,1,20.0,No Preference,Yes,1,"50,000",50000.0,0,Distance does not matter,1,1.0
+u11,3,Casual study,1,3,1,2,1,4,20.0,Morning,Sometimes,1,>100000,125000.0,1,Distance does not matter,1,0.5
+u12,4,Coding / laptop work,1,2,2,5,5,2,3.0,Afternoon,Yes,1,"75,000",75000.0,0,3,0,1.0
+u13,5,Group assignment / discussion,6,4,4,3,3,5,7.0,Afternoon,No,5-6,"75,000",75000.0,0,7,0,0.0
+u14,3,Casual study,2,4,4,2,2,2,3.0,Evening,Sometimes,2,"50,000",50000.0,0,3,0,0.5
+u15,4,Coding / laptop work,2,2,2,5,5,3,20.0,No Preference,Yes,2,>100000,125000.0,1,Distance does not matter,1,1.0

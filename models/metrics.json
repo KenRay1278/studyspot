@@ -1,0 +1,79 @@
+{
+  "selected_model": "Random Forest Regressor",
+  "selection_rule": "Prefer Random Forest when its grouped RMSE is within 5% of the best learned model; otherwise select the lowest grouped RMSE.",
+  "grouped_cross_validation": {
+    "Mean Rating Baseline": {
+      "mae": 0.9904164350541065,
+      "rmse": 1.1876156551767414,
+      "r2": -0.014080107834175015,
+      "mae_std": 0.05851211810312636,
+      "rmse_std": 0.04466951995000448,
+      "r2_std": 0.06459110513920542
+    },
+    "Rule-Based Baseline": {
+      "mae": 1.1644175824175826,
+      "rmse": 1.4408112349830147,
+      "r2": -0.4925696576685257
+    },
+    "Linear Regression": {
+      "mae": 0.8823558469997478,
+      "rmse": 1.125554444892545,
+      "r2": 0.08913618262993772,
+      "mae_std": 0.045989770345974304,
+      "rmse_std": 0.08519893083462407,
+      "r2_std": 0.16820768380661008
+    },
+    "Ridge Regression": {
+      "mae": 0.8683523197127795,
+      "rmse": 1.0874002207664495,
+      "r2": 0.14984273645275392,
+      "mae_std": 0.09734702344025839,
+      "rmse_std": 0.11442199297146059,
+      "r2_std": 0.18539985843799173
+    },
+    "Decision Tree Regressor": {
+      "mae": 0.8702902586563729,
+      "rmse": 1.0947662275143744,
+      "r2": 0.13828586128059017,
+      "mae_std": 0.12729358253469242,
+      "rmse_std": 0.15067399210553153,
+      "r2_std": 0.23367190760126808
+    },
+    "Random Forest Regressor": {
+      "mae": 0.7765347930395295,
+      "rmse": 0.9883001036278164,
+      "r2": 0.29773969979203696,
+      "mae_std": 0.09131489103584746,
+      "rmse_std": 0.1256629277869912,
+      "r2_std": 0.16883973287369766
+    },
+    "KNN Regressor": {
+      "mae": 0.8808312330183304,
+      "rmse": 1.09114938213735,
+      "r2": 0.14397025001570862,
+      "mae_std": 0.09322342254560995,
+      "rmse_std": 0.0968554810853441,
+      "r2_std": 0.1760549180125092
+    }
+  },
+  "secondary_group_holdout": {
+    "held_out_users": [
+      "u1",
+      "u4",
+      "u6"
+    ],
+    "mae": 0.7841601456100953,
+    "rmse": 0.9672903792648719,
+    "r2": 0.3556783496395286
+  },
+  "dataset": {
+    "raw_rating_rows": 180,
+    "valid_training_interactions": 169,
+    "excluded_blank_ratings": 11
+  },
+  "limitations": [
+    "The dataset contains only 15 users and limited ratings per user.",
+    "Metrics describe an MVP recommender and should not be generalized to a large population.",
+    "Rule-based explanations describe feature matches and tradeoffs; they are not causal explanations of the model."
+  ]
+}

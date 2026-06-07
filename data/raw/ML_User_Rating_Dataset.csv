@@ -1,0 +1,181 @@
+user_code,place_id,place_name,rating,form_version
+u1,1,LKC Discussion Room,3,a
+u1,3,McDonald's Downtown Alam Sutera,3,a
+u1,20,Starbucks DT Pacific Garden Alam Sutera,4,a
+u1,35,Two Stories Resto & Lounge,1,a
+u1,10,IKEA Restaurant Alam Sutera,4,a
+u1,2,Monday Coffee Alam Sutera,5,a
+u1,4,Coworking Space Worktren Alam Sutera,,a
+u1,7,Kopi Kenangan - Alam Sutera (DT),3,a
+u1,12,Pasar 8 Area Alam Sutera,2,a
+u1,17,LKC General Area,4,a
+u1,21,A-Ramen Pacific Garden,2,a
+u1,36,Jakarta Coffee House Alam Sutera,5,a
+u2,1,LKC Discussion Room,5,b
+u2,3,McDonald's Downtown Alam Sutera,1,b
+u2,20,Starbucks DT Pacific Garden Alam Sutera,2,b
+u2,35,Two Stories Resto & Lounge,,b
+u2,10,IKEA Restaurant Alam Sutera,3,b
+u2,5,Start Space Gading Serpong,,b
+u2,6,Lumino Cafe - Foresta BSD Tangerang,2,b
+u2,9,Titik Koma Gading Serpong,3,b
+u2,11,Bignose Coffee Shop,,b
+u2,22,Yoshinoya Binus Alam Sutera,2,b
+u2,26,FÜTOPIA - Mall Alam Sutera,2,b
+u2,30,Mixue Mall @ Alam Sutera,3,b
+u3,1,LKC Discussion Room,1,c
+u3,3,McDonald's Downtown Alam Sutera,4,c
+u3,20,Starbucks DT Pacific Garden Alam Sutera,5,c
+u3,35,Two Stories Resto & Lounge,1,c
+u3,10,IKEA Restaurant Alam Sutera,5,c
+u3,8,Kopi Nako BSD,3,c
+u3,13,Valioso x Picco Gelato,2,c
+u3,14,Kebon Kita Space | Coffee & Eatery Serpong Tangerang,2,c
+u3,15,Hoque's Kitchen,,c
+u3,23,KFC Alam Sutera,3,c
+u3,28,Coarse & Fine,4,c
+u3,33,Coffee Melantjong,3,c
+u4,1,LKC Discussion Room,5,d
+u4,3,McDonald's Downtown Alam Sutera,5,d
+u4,20,Starbucks DT Pacific Garden Alam Sutera,3,d
+u4,35,Two Stories Resto & Lounge,,d
+u4,10,IKEA Restaurant Alam Sutera,5,d
+u4,16,Kafe Pedekar Alam Sutera,3,d
+u4,18,ARAH Coffee Alam Sutera,,d
+u4,19,Good Friends Bistro & Cafe Alam Sutera,3,d
+u4,24,1/15 Coffee Alam Sutera,4,d
+u4,27,Solaria - Mall @ Alam Sutera,2,d
+u4,34,Kopi Nako Alam Sutera,4,d
+u4,39,Aruku Coffee and Studio Gading Serpong,,d
+u5,1,LKC Discussion Room,1,e
+u5,3,McDonald's Downtown Alam Sutera,2,e
+u5,20,Starbucks DT Pacific Garden Alam Sutera,4,e
+u5,35,Two Stories Resto & Lounge,3,e
+u5,10,IKEA Restaurant Alam Sutera,4,e
+u5,25,"NOB Coffee & Eatery, The Grove Alam Sutera",3,e
+u5,29,J.CO DONUTS & COFFEE - MALL ALAM SUTERA,3,e
+u5,32,Platon Coffee,3,e
+u5,37,Casabrew Coffee,4,e
+u5,38,Niv Coffee,5,e
+u5,40,Unspoken Coffee,3,e
+u5,31,BINUS Alam Sutera Canteen,1,e
+u6,1,LKC Discussion Room,5,a
+u6,3,McDonald's Downtown Alam Sutera,3,a
+u6,20,Starbucks DT Pacific Garden Alam Sutera,3,a
+u6,35,Two Stories Resto & Lounge,2,a
+u6,10,IKEA Restaurant Alam Sutera,2,a
+u6,2,Monday Coffee Alam Sutera,4,a
+u6,4,Coworking Space Worktren Alam Sutera,3,a
+u6,7,Kopi Kenangan - Alam Sutera (DT),2,a
+u6,12,Pasar 8 Area Alam Sutera,1,a
+u6,17,LKC General Area,5,a
+u6,21,A-Ramen Pacific Garden,2,a
+u6,36,Jakarta Coffee House Alam Sutera,3,a
+u7,1,LKC Discussion Room,1,b
+u7,3,McDonald's Downtown Alam Sutera,3,b
+u7,20,Starbucks DT Pacific Garden Alam Sutera,5,b
+u7,35,Two Stories Resto & Lounge,5,b
+u7,10,IKEA Restaurant Alam Sutera,4,b
+u7,5,Start Space Gading Serpong,2,b
+u7,6,Lumino Cafe - Foresta BSD Tangerang,4,b
+u7,9,Titik Koma Gading Serpong,5,b
+u7,11,Bignose Coffee Shop,4,b
+u7,22,Yoshinoya Binus Alam Sutera,1,b
+u7,26,FÜTOPIA - Mall Alam Sutera,3,b
+u7,30,Mixue Mall @ Alam Sutera,2,b
+u8,1,LKC Discussion Room,5,c
+u8,3,McDonald's Downtown Alam Sutera,4,c
+u8,20,Starbucks DT Pacific Garden Alam Sutera,2,c
+u8,35,Two Stories Resto & Lounge,4,c
+u8,10,IKEA Restaurant Alam Sutera,5,c
+u8,8,Kopi Nako BSD,3,c
+u8,13,Valioso x Picco Gelato,3,c
+u8,14,Kebon Kita Space | Coffee & Eatery Serpong Tangerang,4,c
+u8,15,Hoque's Kitchen,4,c
+u8,23,KFC Alam Sutera,4,c
+u8,28,Coarse & Fine,3,c
+u8,33,Coffee Melantjong,3,c
+u9,1,LKC Discussion Room,5,d
+u9,3,McDonald's Downtown Alam Sutera,3,d
+u9,20,Starbucks DT Pacific Garden Alam Sutera,3,d
+u9,35,Two Stories Resto & Lounge,,d
+u9,10,IKEA Restaurant Alam Sutera,2,d
+u9,16,Kafe Pedekar Alam Sutera,,d
+u9,18,ARAH Coffee Alam Sutera,2,d
+u9,19,Good Friends Bistro & Cafe Alam Sutera,2,d
+u9,24,1/15 Coffee Alam Sutera,,d
+u9,27,Solaria - Mall @ Alam Sutera,2,d
+u9,34,Kopi Nako Alam Sutera,3,d
+u9,39,Aruku Coffee and Studio Gading Serpong,1,d
+u10,1,LKC Discussion Room,5,e
+u10,3,McDonald's Downtown Alam Sutera,2,e
+u10,20,Starbucks DT Pacific Garden Alam Sutera,5,e
+u10,35,Two Stories Resto & Lounge,3,e
+u10,10,IKEA Restaurant Alam Sutera,4,e
+u10,25,"NOB Coffee & Eatery, The Grove Alam Sutera",2,e
+u10,29,J.CO DONUTS & COFFEE - MALL ALAM SUTERA,2,e
+u10,32,Platon Coffee,4,e
+u10,37,Casabrew Coffee,4,e
+u10,38,Niv Coffee,3,e
+u10,40,Unspoken Coffee,5,e
+u10,31,BINUS Alam Sutera Canteen,1,e
+u11,1,LKC Discussion Room,5,a
+u11,3,McDonald's Downtown Alam Sutera,2,a
+u11,20,Starbucks DT Pacific Garden Alam Sutera,4,a
+u11,35,Two Stories Resto & Lounge,4,a
+u11,10,IKEA Restaurant Alam Sutera,3,a
+u11,2,Monday Coffee Alam Sutera,5,a
+u11,4,Coworking Space Worktren Alam Sutera,4,a
+u11,7,Kopi Kenangan - Alam Sutera (DT),2,a
+u11,12,Pasar 8 Area Alam Sutera,1,a
+u11,17,LKC General Area,2,a
+u11,21,A-Ramen Pacific Garden,3,a
+u11,36,Jakarta Coffee House Alam Sutera,5,a
+u12,1,LKC Discussion Room,4,b
+u12,3,McDonald's Downtown Alam Sutera,3,b
+u12,20,Starbucks DT Pacific Garden Alam Sutera,5,b
+u12,35,Two Stories Resto & Lounge,3,b
+u12,10,IKEA Restaurant Alam Sutera,4,b
+u12,5,Start Space Gading Serpong,3,b
+u12,6,Lumino Cafe - Foresta BSD Tangerang,2,b
+u12,9,Titik Koma Gading Serpong,3,b
+u12,11,Bignose Coffee Shop,4,b
+u12,22,Yoshinoya Binus Alam Sutera,2,b
+u12,26,FÜTOPIA - Mall Alam Sutera,2,b
+u12,30,Mixue Mall @ Alam Sutera,2,b
+u13,1,LKC Discussion Room,5,c
+u13,3,McDonald's Downtown Alam Sutera,4,c
+u13,20,Starbucks DT Pacific Garden Alam Sutera,3,c
+u13,35,Two Stories Resto & Lounge,3,c
+u13,10,IKEA Restaurant Alam Sutera,5,c
+u13,8,Kopi Nako BSD,3,c
+u13,13,Valioso x Picco Gelato,3,c
+u13,14,Kebon Kita Space | Coffee & Eatery Serpong Tangerang,5,c
+u13,15,Hoque's Kitchen,4,c
+u13,23,KFC Alam Sutera,4,c
+u13,28,Coarse & Fine,3,c
+u13,33,Coffee Melantjong,3,c
+u14,1,LKC Discussion Room,3,d
+u14,3,McDonald's Downtown Alam Sutera,4,d
+u14,20,Starbucks DT Pacific Garden Alam Sutera,3,d
+u14,35,Two Stories Resto & Lounge,1,d
+u14,10,IKEA Restaurant Alam Sutera,3,d
+u14,16,Kafe Pedekar Alam Sutera,3,d
+u14,18,ARAH Coffee Alam Sutera,5,d
+u14,19,Good Friends Bistro & Cafe Alam Sutera,3,d
+u14,24,1/15 Coffee Alam Sutera,3,d
+u14,27,Solaria - Mall @ Alam Sutera,3,d
+u14,34,Kopi Nako Alam Sutera,4,d
+u14,39,Aruku Coffee and Studio Gading Serpong,2,d
+u15,1,LKC Discussion Room,4,e
+u15,3,McDonald's Downtown Alam Sutera,3,e
+u15,20,Starbucks DT Pacific Garden Alam Sutera,5,e
+u15,35,Two Stories Resto & Lounge,4,e
+u15,10,IKEA Restaurant Alam Sutera,4,e
+u15,25,"NOB Coffee & Eatery, The Grove Alam Sutera",4,e
+u15,29,J.CO DONUTS & COFFEE - MALL ALAM SUTERA,3,e
+u15,32,Platon Coffee,5,e
+u15,37,Casabrew Coffee,4,e
+u15,38,Niv Coffee,4,e
+u15,40,Unspoken Coffee,4,e
+u15,31,BINUS Alam Sutera Canteen,2,e
