@@ -12,11 +12,11 @@ def test_streamlit_app_generates_recommendations(entrypoint):
     assert app.toggle[0].label == "Dark mode"
     assert len(app.select_slider) == 6
     assert app.select_slider[3].options == [
-        "Not important at all",
-        "Slightly important",
-        "Moderately important",
-        "Important",
-        "Very important",
+        "1 - Not important",
+        "2",
+        "3",
+        "4",
+        "5 - Very important",
     ]
 
     app.button[0].click().run(timeout=20)

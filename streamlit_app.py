@@ -8,32 +8,32 @@ from src.recommend import load_model_bundle, recommend_places
 
 
 FREQUENCY_OPTIONS = {
-    "Rarely": 1,
-    "Occasionally": 2,
-    "Sometimes": 3,
-    "Often": 4,
-    "Very often": 5,
+    "1 - Rarely": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5 - Very often": 5,
 }
 NOISE_TOLERANCE_OPTIONS = {
-    "Need a very quiet place": 1,
-    "Prefer quiet surroundings": 2,
-    "Some background noise is okay": 3,
-    "Comfortable with a noisy place": 4,
-    "Noise does not bother me": 5,
+    "1 - Need quiet": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5 - Noise is fine": 5,
 }
 CROWD_TOLERANCE_OPTIONS = {
-    "Prefer an almost empty place": 1,
-    "Prefer an uncrowded place": 2,
-    "Moderate crowds are okay": 3,
-    "Comfortable with crowded places": 4,
-    "Crowding does not bother me": 5,
+    "1 - Prefer empty": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5 - Crowds are fine": 5,
 }
 IMPORTANCE_OPTIONS = {
-    "Not important at all": 1,
-    "Slightly important": 2,
-    "Moderately important": 3,
-    "Important": 4,
-    "Very important": 5,
+    "1 - Not important": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5 - Very important": 5,
 }
 
 NOISE_LABELS = {
@@ -189,7 +189,7 @@ with st.sidebar:
     study_frequency = semantic_input(
         "How often do you study outside home?",
         FREQUENCY_OPTIONS,
-        "Sometimes",
+        "3",
     )
     main_study_purpose = st.selectbox(
         "What is your main study purpose?",
@@ -207,29 +207,29 @@ with st.sidebar:
     noise_tolerance = semantic_input(
         "What noise level are you comfortable with?",
         NOISE_TOLERANCE_OPTIONS,
-        "Prefer quiet surroundings",
+        "2",
     )
     crowd_tolerance = semantic_input(
         "How crowded can the place be?",
         CROWD_TOLERANCE_OPTIONS,
-        "Prefer an uncrowded place",
+        "2",
     )
     st.divider()
     st.subheader("Facilities")
     wifi_importance = semantic_input(
         "How important is Wi-Fi quality?",
         IMPORTANCE_OPTIONS,
-        "Important",
+        "4",
     )
     outlet_importance = semantic_input(
         "How important are power outlets?",
         IMPORTANCE_OPTIONS,
-        "Important",
+        "4",
     )
     table_capacity_importance = semantic_input(
         "How important is table capacity?",
         IMPORTANCE_OPTIONS,
-        "Moderately important",
+        "3",
     )
     st.divider()
     st.subheader("Budget and Schedule")
