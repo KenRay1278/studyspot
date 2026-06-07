@@ -87,9 +87,14 @@ run it without activation:
 .venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-Open the exact URL printed by Streamlit, normally
-`http://127.0.0.1:8501`. The project binds to the IPv4 loopback explicitly to
-avoid Windows `localhost` IPv4/IPv6 resolution issues.
+Open the exact URL printed by Streamlit. If Windows leaves the page on a
+loading skeleton because of `localhost` IPv4/IPv6 resolution, run:
+
+```powershell
+python -m streamlit run app.py --server.address=127.0.0.1
+```
+
+Then open `http://127.0.0.1:8501`.
 
 The Streamlit app collects study preferences, predicts a suitability rating
 for every place, ranks the Top-N results, and explains relevant matches and
@@ -107,7 +112,7 @@ For Streamlit Community Cloud:
 
 1. Push the repository, including the trained `models/model_bundle.joblib`.
 2. Create a Streamlit app linked to the repository.
-3. Set the entry point to `app.py`.
+3. Select the `main` branch and set the entry point to `streamlit_app.py`.
 4. Confirm dependencies install from `requirements.txt`.
 
 The same app can be demonstrated locally or through another Python-compatible

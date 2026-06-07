@@ -1,8 +1,10 @@
+import pytest
 from streamlit.testing.v1 import AppTest
 
 
-def test_streamlit_app_generates_recommendations():
-    app = AppTest.from_file("app.py")
+@pytest.mark.parametrize("entrypoint", ["app.py", "streamlit_app.py"])
+def test_streamlit_app_generates_recommendations(entrypoint):
+    app = AppTest.from_file(entrypoint)
     app.run(timeout=20)
     assert not app.exception
     assert len(app.button) == 1
@@ -11,4 +13,3 @@ def test_streamlit_app_generates_recommendations():
     assert not app.exception
     assert len(app.metric) == 5
     assert all("/ 5" in metric.value for metric in app.metric)
-

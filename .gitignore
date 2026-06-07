@@ -3,5 +3,8 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .matplotlib/
-.streamlit/
+.streamlit/secrets.toml
 *.log
+AGENTS.md
+docs/
+reports/
