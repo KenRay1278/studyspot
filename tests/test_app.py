@@ -8,6 +8,16 @@ def test_streamlit_app_generates_recommendations(entrypoint):
     app.run(timeout=20)
     assert not app.exception
     assert len(app.button) == 1
+    assert len(app.toggle) == 1
+    assert app.toggle[0].label == "Dark mode"
+    assert len(app.select_slider) == 6
+    assert app.select_slider[3].options == [
+        "Not important at all",
+        "Slightly important",
+        "Moderately important",
+        "Important",
+        "Very important",
+    ]
 
     app.button[0].click().run(timeout=20)
     assert not app.exception

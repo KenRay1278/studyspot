@@ -7,6 +7,59 @@ from src.data_validation import ITEM_PATH, clean_items
 from src.recommend import load_model_bundle, recommend_places
 
 
+FREQUENCY_OPTIONS = {
+    "Rarely": 1,
+    "Occasionally": 2,
+    "Sometimes": 3,
+    "Often": 4,
+    "Very often": 5,
+}
+NOISE_TOLERANCE_OPTIONS = {
+    "Need a very quiet place": 1,
+    "Prefer quiet surroundings": 2,
+    "Some background noise is okay": 3,
+    "Comfortable with a noisy place": 4,
+    "Noise does not bother me": 5,
+}
+CROWD_TOLERANCE_OPTIONS = {
+    "Prefer an almost empty place": 1,
+    "Prefer an uncrowded place": 2,
+    "Moderate crowds are okay": 3,
+    "Comfortable with crowded places": 4,
+    "Crowding does not bother me": 5,
+}
+IMPORTANCE_OPTIONS = {
+    "Not important at all": 1,
+    "Slightly important": 2,
+    "Moderately important": 3,
+    "Important": 4,
+    "Very important": 5,
+}
+
+NOISE_LABELS = {
+    1: "Very quiet",
+    2: "Quiet",
+    3: "Moderate",
+    4: "Noisy",
+    5: "Very noisy",
+}
+CROWD_LABELS = {
+    1: "Almost empty",
+    2: "Uncrowded",
+    3: "Moderately crowded",
+    4: "Crowded",
+    5: "Very crowded",
+}
+WIFI_LABELS = {1: "Very poor", 2: "Poor", 3: "Fair", 4: "Good", 5: "Excellent"}
+OUTLET_LABELS = {
+    1: "Very limited",
+    2: "Limited",
+    3: "Moderate",
+    4: "Available",
+    5: "Widely available",
+}
+
+
 st.set_page_config(
     page_title="StudySpot",
     page_icon=":round_pushpin:",
@@ -28,6 +81,94 @@ def rupiah(value: float) -> str:
     return f"Rp{value:,.0f}".replace(",", ".")
 
 
+def semantic_input(
+    label: str, options: dict[str, int], default: str, help_text: str | None = None
+) -> int:
+    selected = st.select_slider(
+        label,
+        options=list(options),
+        value=default,
+        help=help_text,
+    )
+    return options[selected]
+
+
+def apply_responsive_theme(dark_mode: bool) -> None:
+    if dark_mode:
+        background = "#0E1715"
+        surface = "#162522"
+        sidebar = "#12201D"
+        text = "#F1F7F5"
+        muted = "#B5C8C3"
+        border = "#2B4640"
+    else:
+        background = "#F7FAF9"
+        surface = "#FFFFFF"
+        sidebar = "#EAF3F1"
+        text = "#18332E"
+        muted = "#506C65"
+        border = "#C8DCD7"
+
+    st.markdown(
+        f"""
+        <style>
+        .stApp, [data-testid="stAppViewContainer"] {{
+            background: {background};
+            color: {text};
+        }}
+        [data-testid="stSidebar"] > div:first-child {{
+            background: {sidebar};
+        }}
+        [data-testid="stHeader"] {{
+            background: color-mix(in srgb, {background} 88%, transparent);
+        }}
+        [data-testid="stVerticalBlockBorderWrapper"],
+        [data-testid="stMetric"] {{
+            background: {surface};
+            border-color: {border};
+        }}
+        .stApp p, .stApp label, .stApp h1, .stApp h2, .stApp h3,
+        .stApp [data-testid="stCaptionContainer"] {{
+            color: {text};
+        }}
+        .stApp [data-testid="stCaptionContainer"] p {{
+            color: {muted};
+        }}
+        @media (max-width: 768px) {{
+            .block-container {{
+                padding: 1rem 0.8rem 4rem;
+            }}
+            [data-testid="stHorizontalBlock"] {{
+                flex-direction: column;
+                gap: 0.5rem;
+            }}
+            [data-testid="column"] {{
+                width: 100% !important;
+                flex: 1 1 100% !important;
+            }}
+            [data-testid="stMetric"] {{
+                padding: 0.75rem;
+            }}
+            h1 {{
+                font-size: 2rem !important;
+            }}
+            .stButton button, .stLinkButton a {{
+                width: 100%;
+            }}
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+dark_mode = st.sidebar.toggle(
+    "Dark mode",
+    value=False,
+    help="Use a darker color scheme that is easier on the eyes at night.",
+)
+apply_responsive_theme(dark_mode)
+
 st.title("StudySpot")
 st.caption(
     "Personalized study-space recommendations around BINUS Alam Sutera, "
@@ -44,9 +185,11 @@ except (FileNotFoundError, ValueError) as error:
 
 with st.sidebar:
     st.header("Your Study Preferences")
-    study_frequency = st.slider(
-        "How often do you study outside home?", 1, 5, 3,
-        help="1 means rarely and 5 means very often.",
+    st.caption("Describe your ideal study session. There are no wrong answers.")
+    study_frequency = semantic_input(
+        "How often do you study outside home?",
+        FREQUENCY_OPTIONS,
+        "Sometimes",
     )
     main_study_purpose = st.selectbox(
         "What is your main study purpose?",
@@ -61,22 +204,35 @@ with st.sidebar:
     usual_group_size = st.slider(
         "How many people usually study with you?", 1, 8, 2
     )
-    noise_tolerance = st.slider(
-        "How much noise can you tolerate?", 1, 5, 2,
-        help="1 means you need quiet; 5 means noise is acceptable.",
+    noise_tolerance = semantic_input(
+        "What noise level are you comfortable with?",
+        NOISE_TOLERANCE_OPTIONS,
+        "Prefer quiet surroundings",
     )
-    crowd_tolerance = st.slider(
-        "How crowded can the place be?", 1, 5, 2
+    crowd_tolerance = semantic_input(
+        "How crowded can the place be?",
+        CROWD_TOLERANCE_OPTIONS,
+        "Prefer an uncrowded place",
     )
-    wifi_importance = st.slider(
-        "How important is Wi-Fi quality?", 1, 5, 4
+    st.divider()
+    st.subheader("Facilities")
+    wifi_importance = semantic_input(
+        "How important is Wi-Fi quality?",
+        IMPORTANCE_OPTIONS,
+        "Important",
     )
-    outlet_importance = st.slider(
-        "How important are power outlets?", 1, 5, 4
+    outlet_importance = semantic_input(
+        "How important are power outlets?",
+        IMPORTANCE_OPTIONS,
+        "Important",
     )
-    table_capacity_importance = st.slider(
-        "How important is table capacity?", 1, 5, 3
+    table_capacity_importance = semantic_input(
+        "How important is table capacity?",
+        IMPORTANCE_OPTIONS,
+        "Moderately important",
     )
+    st.divider()
+    st.subheader("Budget and Schedule")
     spending = st.number_input(
         "Usual spending per study session (Rp)",
         min_value=0,
@@ -173,10 +329,11 @@ for _, place in recommendations.iterrows():
         )
 
         st.write(
-            f"Noise **{int(place['noise_level'])}/5** | "
-            f"Crowd **{int(place['crowd_level'])}/5** | "
-            f"Wi-Fi **{int(place['wifi_quality'])}/5** | "
-            f"Outlets **{int(place['power_outlet_availability'])}/5** | "
+            f"Noise **{NOISE_LABELS[int(place['noise_level'])]}** | "
+            f"Crowd **{CROWD_LABELS[int(place['crowd_level'])]}** | "
+            f"Wi-Fi **{WIFI_LABELS[int(place['wifi_quality'])]}** | "
+            f"Outlets "
+            f"**{OUTLET_LABELS[int(place['power_outlet_availability'])]}** | "
             f"Table capacity **{int(place['table_capacity'])} people**"
         )
         st.write(place["explanation"])
